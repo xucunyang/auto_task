@@ -11,9 +11,12 @@ tasks:
   - id: t3_report
     name: 生成报告
     depends_on: [t2_clean]
+    acceptance_ref: schemas/acceptance_t3.yaml
   - id: t4_report
     name: 提炼结论
     depends_on: [t3_report]
+    acceptance_ref: schemas/acceptance_t4.yaml
   - id: t5_notify
     name: 发送通知
     depends_on: [t4_report]
+    acceptance_ref: schemas/acceptance_t5.yaml

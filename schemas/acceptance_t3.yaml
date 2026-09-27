@@ -1,0 +1,9 @@
+# t3_report 验收标准 (报告必须内嵌来源引用)
+acceptance:
+  - type: file_exists
+    path: artifacts/report.md
+  - type: traceability
+    path: artifacts/report.md
+    min_links: 5
+  - type: human_approval
+    required: false

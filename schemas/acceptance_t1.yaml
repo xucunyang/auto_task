@@ -1,4 +1,4 @@
-# t1_collect 验收标准 (task.md §10)
+# t1_collect 验收标准 (task.md §10 + 信息来源可追溯要求)
 acceptance:
   - type: file_exists
     path: artifacts/collect.json
@@ -7,5 +7,9 @@ acceptance:
     expect_exit: 0
   - type: business_rule
     expr: "collected_count > 0"
+  - type: traceability
+    path: artifacts/collect.json
+    record_fields: [url, publisher, publish_date, title]
+    source_url_min: 1
   - type: human_approval
     required: false

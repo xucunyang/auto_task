@@ -1,0 +1,11 @@
+# t4_report 验收标准 (每条结论/建议须附来源链接)
+acceptance:
+  - type: file_exists
+    path: artifacts/conclusions.json
+  - type: traceability
+    path: artifacts/conclusions.json
+    array_keys: [conclusions, suggestions]
+    record_fields: [text, sources]
+    source_url_min: 1
+  - type: human_approval
+    required: false

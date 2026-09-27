@@ -2,9 +2,9 @@
   "plan_id": "elevator_policy_research_2026-09-27",
   "timezone": "Asia/Shanghai",
   "status": "RUNNING",
-  "version": 3,
+  "version": 5,
   "created_at": "2026-09-27T09:33:54+08:00",
-  "updated_at": "2026-09-27T09:34:51+08:00",
+  "updated_at": "2026-09-27T10:07:02+08:00",
   "tasks": [
     {
       "id": "t10_concurrency",
@@ -36,47 +36,47 @@
     {
       "id": "t1_collect",
       "name": "收集政策文件",
-      "status": "PENDING",
+      "status": "DONE",
       "depends_on": [],
       "shard": "state/tasks/t1_collect.json",
       "result": null,
-      "acceptance_ref": null
+      "acceptance_ref": "schemas/acceptance_t1.yaml"
     },
     {
       "id": "t2_clean",
       "name": "清洗数据",
-      "status": "BLOCKED",
+      "status": "DONE",
       "depends_on": [],
       "shard": "state/tasks/t2_clean.json",
       "result": null,
-      "acceptance_ref": null
+      "acceptance_ref": "schemas/acceptance_t2.yaml"
     },
     {
       "id": "t3_report",
       "name": "生成报告",
-      "status": "BLOCKED",
+      "status": "DONE",
       "depends_on": [],
       "shard": "state/tasks/t3_report.json",
       "result": null,
-      "acceptance_ref": null
+      "acceptance_ref": "schemas/acceptance_t3.yaml"
     },
     {
       "id": "t4_report",
       "name": "提炼结论",
-      "status": "BLOCKED",
+      "status": "DONE",
       "depends_on": [],
       "shard": "state/tasks/t4_report.json",
       "result": null,
-      "acceptance_ref": null
+      "acceptance_ref": "schemas/acceptance_t4.yaml"
     },
     {
       "id": "t5_notify",
       "name": "发送通知",
-      "status": "BLOCKED",
+      "status": "DONE",
       "depends_on": [],
       "shard": "state/tasks/t5_notify.json",
       "result": null,
-      "acceptance_ref": null
+      "acceptance_ref": "schemas/acceptance_t5.yaml"
     },
     {
       "id": "t6_dirs",

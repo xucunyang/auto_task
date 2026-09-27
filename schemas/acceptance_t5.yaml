@@ -1,0 +1,9 @@
+# t5_notify 验收标准 (通知须带可核验摘要与时间戳)
+acceptance:
+  - type: file_exists
+    path: artifacts/notify_result.json
+  - type: traceability
+    path: artifacts/notify_result.json
+    record_fields: [status, summary, ts]
+  - type: human_approval
+    required: false

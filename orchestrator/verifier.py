@@ -11,7 +11,8 @@ def _has_python():
     import shutil as _s
     return _s.which("python") is not None
 
-VALID_TYPES = {"command", "file_exists", "json_schema", "business_rule", "human_approval"}
+VALID_TYPES = {"command", "file_exists", "json_schema", "business_rule", "human_approval",
+               "traceability"}
 
 
 class VerifierAgent:
@@ -75,6 +76,9 @@ class VerifierAgent:
             if t == "business_rule":
                 ok = self._eval_rule(check["expr"], task_id)
                 return {"type": t, "passed": ok, "detail": check["expr"]}
+            if t == "traceability":
+                ok, detail = self._check_traceability(check)
+                return {"type": t, "passed": ok, "detail": detail}
             if t == "human_approval":
                 return {"type": t, "passed": not check.get("required", False),
                         "detail": "auto" if not check.get("required") else "需人工"}
@@ -84,6 +88,54 @@ class VerifierAgent:
             return {"type": t, "passed": False, "detail": "未知验收类型"}
         except Exception as e:
             return {"type": t, "passed": False, "detail": f"error: {e}"}
+
+    # ---- traceability: 信息来源可追溯/可校验 (§4.3+§10) ----
+    def _check_traceability(self, check) -> tuple:
+        """校验产物中每条信息都附带来源。
+        json 模式: record_fields 中字段必须非空; sources 字段须含 >=1 条 http(s) 链接
+        md  模式: min_links 个以上可点击来源链接"""
+        p = self.base / check["path"]
+        if not p.exists():
+            return False, f"{check['path']} 不存在"
+        if p.suffix == ".md":
+            text = p.read_text()
+            links = re.findall(r"https?://[^\s)\]>】]+", text)
+            need = check.get("min_links", 1)
+            return (len(links) >= need), f"引用链接 {len(links)}/{need}"
+        # json 模式
+        data = json.loads(p.read_text())
+        arrays = check.get("array_keys")
+        records = []
+        if arrays:
+            for k in arrays:
+                v = data.get(k, [])
+                if not isinstance(v, list):
+                    return False, f"{k} 非数组"
+                records += v
+        elif isinstance(data, list):
+            records = data
+        elif isinstance(data, dict):
+            records = [data]
+        if not records:
+            return False, "无记录可校验"
+        fields = check.get("record_fields", ["url"])
+        url_min = check.get("source_url_min", 0)
+        bad = []
+        for i, r in enumerate(records):
+            if not isinstance(r, dict):
+                bad.append(f"#{i} 非对象"); continue
+            for f in fields:
+                v = r.get(f)
+                if v is None or v == "" or v == []:
+                    bad.append(f"#{i} 缺 {f}")
+                    break
+            srcs = r.get("sources")
+            if url_min and isinstance(srcs, list):
+                if sum(1 for x in srcs if isinstance(x, str) and x.startswith(("http://", "https://"))) < url_min:
+                    bad.append(f"#{i} 来源链接不足{url_min}条")
+        if bad:
+            return False, f"{len(bad)}/{len(records)} 条不可溯: {bad[:3]}"
+        return True, f"{len(records)} 条来源完整"
 
     # ---- business_rule: 受限表达式, 注入 rows/null_rate 等上下文 ----
     def _eval_rule(self, expr: str, task_id: str) -> bool:

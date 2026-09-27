@@ -1,0 +1,127 @@
+[
+  {
+    "source_id": "S1",
+    "title": "国新办“开局起步‘十五五’”系列主题新闻发布会：4楼及以上住宅都要加装电梯",
+    "publisher": "国务院新闻办公室/住房和城乡建设部",
+    "publish_date": "2026-09-18",
+    "region": "全国",
+    "level": "national",
+    "doc_type": "新闻发布会",
+    "source_type": "gov",
+    "url": "https://finance.sina.com.cn/jjxw/2026-09-18/doc-inisfyex3463239.shtml",
+    "key_points": [
+      "新版《住宅项目规范》4楼及以上住宅配电梯",
+      "层高2.8→3米",
+      "“十五五”更新和加装住宅电梯57.5万台",
+      "改造老旧小区11.5万个"
+    ]
+  },
+  {
+    "source_id": "S2",
+    "title": "住房城乡建设部：4楼及以上新建住宅都要加装电梯",
+    "publisher": "中国老年报（住建部发布会报道）",
+    "publish_date": "2026-09-23",
+    "region": "全国",
+    "level": "national",
+    "doc_type": "权威报道",
+    "source_type": "gov",
+    "url": "https://www.cncaprc.gov.cn/xwllxw/773057.jhtml",
+    "key_points": [
+      "最新版《住宅项目规范》4楼及以上配电梯",
+      "执行住宅项目规范等国家标准"
+    ]
+  },
+  {
+    "source_id": "S3",
+    "title": "武汉市硚口区：既有住宅加装电梯设计方案联合审查批准信息公示（2026-09-20）",
+    "publisher": "硚口区行政审批局",
+    "publish_date": "2026-09-20",
+    "region": "湖北省武汉市",
+    "level": "city",
+    "doc_type": "行政审批公示",
+    "source_type": "gov",
+    "url": "https://www.qiaokou.gov.cn/qkxw/tzgg/202609/t20260921_2851716.shtml",
+    "key_points": [
+      "设计方案联合审查",
+      "部门联审原则同意",
+      "并联审批落地样本"
+    ]
+  },
+  {
+    "source_id": "S4",
+    "title": "清溪镇：加装电梯享受国债补贴 最高30万/台（申报宣传）",
+    "publisher": "清溪镇住建部门（政策宣传）",
+    "publish_date": "2026-09-13",
+    "region": "广东省东莞市",
+    "level": "town",
+    "doc_type": "政策宣传",
+    "source_type": "gov",
+    "url": "https://www.sohu.com/a/1075395542_121123837",
+    "key_points": [
+      "国债支持加装电梯",
+      "4-6层25万/台、7层及以上30万/台",
+      "先到先得窗口期"
+    ]
+  },
+  {
+    "source_id": "S5",
+    "title": "重庆九龙坡民主村：加装电梯中的全过程人民民主实践",
+    "publisher": "人民网-人民日报",
+    "publish_date": "2026-09-24",
+    "region": "重庆市九龙坡区",
+    "level": "district",
+    "doc_type": "地方实践",
+    "source_type": "gov",
+    "url": "http://politics.people.com.cn/n1/2026/0924/c461001-40804660.html",
+    "key_points": [
+      "高层诉求与低层顾虑协商",
+      "人大代表联络推动"
+    ]
+  },
+  {
+    "source_id": "S6",
+    "title": "住建部再提四楼及以上装电梯：新标已施行，北京已实施6年",
+    "publisher": "新京报",
+    "publish_date": "2026-09-23",
+    "region": "全国",
+    "level": "national",
+    "doc_type": "政策解读",
+    "source_type": "media",
+    "url": "https://www.bjnews.com.cn/detail/1789718135129989.html",
+    "key_points": [
+      "电梯设置七层→四层门槛",
+      "老龄化适配"
+    ]
+  },
+  {
+    "source_id": "S7",
+    "title": "老旧小区加装电梯或迎重大转变：国债首次纳入“两新”支持范围",
+    "publisher": "趋势洞见社",
+    "publish_date": "2026-09-07",
+    "region": "全国",
+    "level": "national",
+    "doc_type": "政策解读",
+    "source_type": "media",
+    "url": "https://news.qq.com/rain/a/20260907A05W1Z00",
+    "key_points": [
+      "2026年国债首纳加装电梯",
+      "4-6层25万/7层+30万",
+      "南宁三级补助案例"
+    ]
+  },
+  {
+    "source_id": "S8",
+    "title": "层高提至3米、4楼及以上要配电梯！“十五五”住房新规",
+    "publisher": "上观新闻/新浪财经",
+    "publish_date": "2026-09-18",
+    "region": "全国",
+    "level": "national",
+    "doc_type": "政策解读",
+    "source_type": "media",
+    "url": "https://finance.sina.com.cn/jjxw/2026-09-18/doc-inisfyex3463239.shtml",
+    "key_points": [
+      "14个维度升级住房指标",
+      "好房子三件事"
+    ]
+  }
+]
