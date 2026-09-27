@@ -1,0 +1,11 @@
+# t2_clean 验收标准 (task.md §10)
+acceptance:
+  - type: file_exists
+    path: artifacts/clean.json
+  - type: command
+    cmd: python3 -c "import json; d=json.load(open('artifacts/clean.json')); assert len(d)>0"
+    expect_exit: 0
+  - type: business_rule
+    expr: "null_rate < 0.01"
+  - type: human_approval
+    required: false

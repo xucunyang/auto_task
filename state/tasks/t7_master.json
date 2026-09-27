@@ -1,0 +1,27 @@
+{
+  "task_id": "t7_master",
+  "plan_id": "fix_2026-09-27",
+  "status": "DONE",
+  "version": 6,
+  "owner": "orchestrator",
+  "lease_until": null,
+  "idempotency_key": "fix_2026-09-27/t7_master",
+  "attempts": 0,
+  "max_attempts": 3,
+  "objective": "按 task.md §4.1 重构 master.json: 7字段 + tasks数组",
+  "inputs": [
+    "state/master.json"
+  ],
+  "outputs": [
+    "state/master.json"
+  ],
+  "acceptance": [
+    {
+      "type": "command",
+      "cmd": "python tests/test_master.py",
+      "expect_exit": 0
+    }
+  ],
+  "handoff": "master.json 重构为 §4.1 七字段+tasks数组",
+  "updated_at": "2026-09-27T09:34:51+08:00"
+}

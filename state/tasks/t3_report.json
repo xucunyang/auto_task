@@ -1,0 +1,25 @@
+{
+  "task_id": "t3_report",
+  "plan_id": "elevator_policy_research_2026-09-27",
+  "status": "BLOCKED",
+  "version": 1,
+  "owner": null,
+  "lease_until": null,
+  "idempotency_key": "elevator_policy_research_2026-09-27/t3_report",
+  "attempts": 0,
+  "max_attempts": 3,
+  "objective": "生成政策对比分析报告",
+  "inputs": [
+    "artifacts/clean.json"
+  ],
+  "outputs": [
+    "artifacts/report.md"
+  ],
+  "acceptance": [
+    {
+      "type": "file_exists",
+      "path": "artifacts/report.md"
+    }
+  ],
+  "handoff": null
+}

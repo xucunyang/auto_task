@@ -1,0 +1,6 @@
+{"ts": "2026-09-27T09:33:14+08:00", "level": "WARN", "subject": "task t1 failed", "body": "test", "channel": "log"}
+{"ts": "2026-09-27T09:33:14+08:00", "level": "CRITICAL", "subject": "task t2 in DEAD_LETTER", "body": "需要人工介入", "channel": "log"}
+{"ts": "2026-09-27T09:33:14+08:00", "level": "INFO", "subject": "daily report", "body": "ok", "channel": "log"}
+{"ts": "2026-09-27T09:33:54+08:00", "level": "WARN", "subject": "task t1 failed", "body": "test", "channel": "log"}
+{"ts": "2026-09-27T09:33:54+08:00", "level": "CRITICAL", "subject": "task t2 in DEAD_LETTER", "body": "需要人工介入", "channel": "log"}
+{"ts": "2026-09-27T09:35:18+08:00", "level": "INFO", "subject": "daily report", "body": "x", "channel": "log"}

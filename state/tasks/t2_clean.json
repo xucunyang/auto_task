@@ -1,0 +1,30 @@
+{
+  "task_id": "t2_clean",
+  "plan_id": "elevator_policy_research_2026-09-27",
+  "status": "BLOCKED",
+  "version": 1,
+  "owner": null,
+  "lease_until": null,
+  "idempotency_key": "elevator_policy_research_2026-09-27/t2_clean",
+  "attempts": 0,
+  "max_attempts": 3,
+  "objective": "清洗采集数据，输出 clean.json",
+  "inputs": [
+    "artifacts/collect.json"
+  ],
+  "outputs": [
+    "artifacts/clean.json"
+  ],
+  "acceptance": [
+    {
+      "type": "command",
+      "cmd": "test -f schemas/acceptance_t2.yaml",
+      "expect_exit": 0
+    },
+    {
+      "type": "file_exists",
+      "path": "artifacts/clean.json"
+    }
+  ],
+  "handoff": null
+}

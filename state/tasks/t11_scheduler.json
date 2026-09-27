@@ -1,0 +1,28 @@
+{
+  "task_id": "t11_scheduler",
+  "plan_id": "fix_2026-09-27",
+  "status": "DONE",
+  "version": 6,
+  "owner": "orchestrator",
+  "lease_until": null,
+  "idempotency_key": "fix_2026-09-27/t11_scheduler",
+  "attempts": 0,
+  "max_attempts": 3,
+  "objective": "实现 §7.1/§8 调度器: cron模板生成计划实例+幂等+misfire, 以及 Notifier 告警骨架",
+  "inputs": [
+    "config/schedule.yaml"
+  ],
+  "outputs": [
+    "orchestrator/scheduler.py",
+    "orchestrator/notifier.py"
+  ],
+  "acceptance": [
+    {
+      "type": "command",
+      "cmd": "python -m py_compile orchestrator/scheduler.py orchestrator/notifier.py",
+      "expect_exit": 0
+    }
+  ],
+  "handoff": "计划实例生成/幂等跳过/misfire/Notifier 告警",
+  "updated_at": "2026-09-27T09:34:51+08:00"
+}

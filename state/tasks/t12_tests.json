@@ -1,0 +1,28 @@
+{
+  "task_id": "t12_tests",
+  "plan_id": "fix_2026-09-27",
+  "status": "DONE",
+  "version": 6,
+  "owner": "orchestrator",
+  "lease_until": null,
+  "idempotency_key": "fix_2026-09-27/t12_tests",
+  "attempts": 0,
+  "max_attempts": 3,
+  "objective": "按 §10 重写验收 schema (command/file_exists/business_rule) + 补 tests/*.py 测试",
+  "inputs": [
+    "schemas/"
+  ],
+  "outputs": [
+    "schemas/acceptance_t*.yaml",
+    "tests/test_*.py"
+  ],
+  "acceptance": [
+    {
+      "type": "command",
+      "cmd": "python tests/test_master.py && python tests/test_shards.py",
+      "expect_exit": 0
+    }
+  ],
+  "handoff": "§10 验收schema重写 + test_master/test_shards",
+  "updated_at": "2026-09-27T09:34:51+08:00"
+}

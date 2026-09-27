@@ -1,0 +1,25 @@
+{
+  "task_id": "t4_report",
+  "plan_id": "elevator_policy_research_2026-09-27",
+  "status": "BLOCKED",
+  "version": 1,
+  "owner": null,
+  "lease_until": null,
+  "idempotency_key": "elevator_policy_research_2026-09-27/t4_report",
+  "attempts": 0,
+  "max_attempts": 3,
+  "objective": "提炼关键结论和建议",
+  "inputs": [
+    "artifacts/report.md"
+  ],
+  "outputs": [
+    "artifacts/conclusions.json"
+  ],
+  "acceptance": [
+    {
+      "type": "file_exists",
+      "path": "artifacts/conclusions.json"
+    }
+  ],
+  "handoff": null
+}

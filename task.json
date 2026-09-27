@@ -1,0 +1,12 @@
+{
+  "conversation_progress": {
+    "completed_tasks": 10,
+    "total_tasks": 12,
+    "progress_percent": 83.33,
+    "last_completed": "Task10-编写验收标准 schema 文件示例",
+    "current_session_started": "2026-09-26T08:05:00+08:00"
+  },
+  "status": "NEEDS_RECOVERY",
+  "needs_new_session": true,
+  "message": "进度已达 83.33% > 80%，需要创建新会话。当前状态：orchestrator.py 已启动，等待触发子任务执行"
+}

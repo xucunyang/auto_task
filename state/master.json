@@ -1,0 +1,118 @@
+{
+  "plan_id": "elevator_policy_research_2026-09-27",
+  "timezone": "Asia/Shanghai",
+  "status": "RUNNING",
+  "version": 3,
+  "created_at": "2026-09-27T09:33:54+08:00",
+  "updated_at": "2026-09-27T09:34:51+08:00",
+  "tasks": [
+    {
+      "id": "t10_concurrency",
+      "name": "实现 §11 并发控制: 原子写fsync+rename, filelock任务锁, 乐观锁version, 幂等键, 租约, 重试, 死信, 事件日志jsonl, 修复event_manager.py语法错误",
+      "status": "DONE",
+      "depends_on": [],
+      "shard": "state/tasks/t10_concurrency.json",
+      "result": null,
+      "acceptance_ref": null
+    },
+    {
+      "id": "t11_scheduler",
+      "name": "实现 §7.1/§8 调度器: cron模板生成计划实例+幂等+misfire, 以及 Notifier 告警骨架",
+      "status": "DONE",
+      "depends_on": [],
+      "shard": "state/tasks/t11_scheduler.json",
+      "result": null,
+      "acceptance_ref": null
+    },
+    {
+      "id": "t12_tests",
+      "name": "按 §10 重写验收 schema (command/file_exists/business_rule) + 补 tests/*.py 测试",
+      "status": "DONE",
+      "depends_on": [],
+      "shard": "state/tasks/t12_tests.json",
+      "result": null,
+      "acceptance_ref": null
+    },
+    {
+      "id": "t1_collect",
+      "name": "收集政策文件",
+      "status": "PENDING",
+      "depends_on": [],
+      "shard": "state/tasks/t1_collect.json",
+      "result": null,
+      "acceptance_ref": null
+    },
+    {
+      "id": "t2_clean",
+      "name": "清洗数据",
+      "status": "BLOCKED",
+      "depends_on": [],
+      "shard": "state/tasks/t2_clean.json",
+      "result": null,
+      "acceptance_ref": null
+    },
+    {
+      "id": "t3_report",
+      "name": "生成报告",
+      "status": "BLOCKED",
+      "depends_on": [],
+      "shard": "state/tasks/t3_report.json",
+      "result": null,
+      "acceptance_ref": null
+    },
+    {
+      "id": "t4_report",
+      "name": "提炼结论",
+      "status": "BLOCKED",
+      "depends_on": [],
+      "shard": "state/tasks/t4_report.json",
+      "result": null,
+      "acceptance_ref": null
+    },
+    {
+      "id": "t5_notify",
+      "name": "发送通知",
+      "status": "BLOCKED",
+      "depends_on": [],
+      "shard": "state/tasks/t5_notify.json",
+      "result": null,
+      "acceptance_ref": null
+    },
+    {
+      "id": "t6_dirs",
+      "name": "补齐目录结构: locks/, orchestrator内嵌目录, config/schedule.yaml, templates/daily_plan.yaml",
+      "status": "DONE",
+      "depends_on": [],
+      "shard": "state/tasks/t6_dirs.json",
+      "result": null,
+      "acceptance_ref": null
+    },
+    {
+      "id": "t7_master",
+      "name": "按 task.md §4.1 重构 master.json: 7字段 + tasks数组",
+      "status": "DONE",
+      "depends_on": [],
+      "shard": "state/tasks/t7_master.json",
+      "result": null,
+      "acceptance_ref": null
+    },
+    {
+      "id": "t8_shards",
+      "name": "按 task.md §4.2 重构 5 个任务分片: 补齐14字段",
+      "status": "DONE",
+      "depends_on": [],
+      "shard": "state/tasks/t8_shards.json",
+      "result": null,
+      "acceptance_ref": null
+    },
+    {
+      "id": "t9_statemachine",
+      "name": "实现状态机流转 + 主循环 §7.2: 读状态→租约回收→算READY→派发→校验→推进",
+      "status": "DONE",
+      "depends_on": [],
+      "shard": "state/tasks/t9_statemachine.json",
+      "result": null,
+      "acceptance_ref": null
+    }
+  ]
+}

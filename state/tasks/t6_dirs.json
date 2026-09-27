@@ -1,0 +1,29 @@
+{
+  "task_id": "t6_dirs",
+  "plan_id": "fix_2026-09-27",
+  "status": "DONE",
+  "version": 6,
+  "owner": "orchestrator",
+  "lease_until": null,
+  "idempotency_key": "fix_2026-09-27/t6_dirs",
+  "attempts": 0,
+  "max_attempts": 3,
+  "objective": "补齐目录结构: locks/, orchestrator内嵌目录, config/schedule.yaml, templates/daily_plan.yaml",
+  "inputs": [
+    "task.md"
+  ],
+  "outputs": [
+    "locks/",
+    "orchestrator/config/schedule.yaml",
+    "orchestrator/templates/daily_plan.yaml"
+  ],
+  "acceptance": [
+    {
+      "type": "command",
+      "cmd": "test -d locks && test -f config/schedule.yaml",
+      "expect_exit": 0
+    }
+  ],
+  "handoff": "补齐 locks/ 与 orchestrator 内嵌目录 + schedule.yaml + daily_plan.yaml",
+  "updated_at": "2026-09-27T09:34:51+08:00"
+}

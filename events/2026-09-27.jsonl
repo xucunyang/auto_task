@@ -1,0 +1,44 @@
+{"ts": "2026-09-27T09:29:11+08:00", "scheduler": "elevator_policy_research_2026-09-27", "event": "SKIPPED", "reason": "plan already exists (idempotent)"}
+{"ts": "2026-09-27T09:29:20+08:00", "scheduler": "elevator_policy_research_2026-09-27", "event": "SKIPPED", "reason": "plan already exists (idempotent)"}
+{"ts": "2026-09-27T09:29:20+08:00", "scheduler": "elevator_policy_research_2026-09-27", "event": "SKIPPED", "reason": "plan already exists (idempotent)"}
+{"ts": "2026-09-27T09:33:14+08:00", "scheduler": "elevator_policy_research_2026-09-27", "event": "SKIPPED", "reason": "plan already exists (idempotent)"}
+{"ts": "2026-09-27T09:33:14+08:00", "scheduler": "other_job_2026-09-27", "event": "CREATED", "tasks": 5}
+{"ts": "2026-09-27T09:33:54+08:00", "scheduler": "elevator_policy_research_2026-09-27", "event": "CREATED", "tasks": 5}
+{"ts": "2026-09-27T09:33:54+08:00", "scheduler": "elevator_policy_research_2026-09-27", "event": "SKIPPED", "reason": "plan already exists (idempotent)"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t6_dirs", "from": "PENDING", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t6_dirs", "from": "READY", "to": "RUNNING", "agent": "sub-agent-t6_dirs"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t6_dirs", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t6_dirs", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t6_dirs", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t7_master", "from": "PENDING", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t7_master", "from": "READY", "to": "RUNNING", "agent": "sub-agent-t7_master"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t7_master", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t7_master", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t7_master", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t8_shards", "from": "PENDING", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t8_shards", "from": "READY", "to": "RUNNING", "agent": "sub-agent-t8_shards"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t8_shards", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t8_shards", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t8_shards", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t9_statemachine", "from": "PENDING", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t9_statemachine", "from": "READY", "to": "RUNNING", "agent": "sub-agent-t9_statemachine"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t9_statemachine", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t9_statemachine", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t9_statemachine", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t10_concurrency", "from": "PENDING", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t10_concurrency", "from": "READY", "to": "RUNNING", "agent": "sub-agent-t10_concurrency"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t10_concurrency", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t10_concurrency", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t10_concurrency", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t11_scheduler", "from": "PENDING", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t11_scheduler", "from": "READY", "to": "RUNNING", "agent": "sub-agent-t11_scheduler"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t11_scheduler", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t11_scheduler", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t11_scheduler", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t12_tests", "from": "PENDING", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t12_tests", "from": "READY", "to": "RUNNING", "agent": "sub-agent-t12_tests"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t12_tests", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t12_tests", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:34:51+08:00", "task_id": "t12_tests", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T09:35:05+08:00", "scheduler": "elevator_policy_research_2026-09-27", "event": "SKIPPED", "reason": "plan already exists (idempotent)"}
+{"ts": "2026-09-27T09:35:18+08:00", "scheduler": "elevator_policy_research_2026-09-27", "event": "SKIPPED", "reason": "plan already exists (idempotent)"}

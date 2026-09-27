@@ -1,0 +1,11 @@
+# t1_collect 验收标准 (task.md §10)
+acceptance:
+  - type: file_exists
+    path: artifacts/collect.json
+  - type: command
+    cmd: python3 tests/test_shards.py
+    expect_exit: 0
+  - type: business_rule
+    expr: "collected_count > 0"
+  - type: human_approval
+    required: false

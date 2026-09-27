@@ -1,0 +1,19 @@
+plan_name: elevator_policy_research
+tasks:
+  - id: t1_collect
+    name: 收集政策文件
+    depends_on: []
+    acceptance_ref: schemas/acceptance_t1.yaml
+  - id: t2_clean
+    name: 清洗数据
+    depends_on: [t1_collect]
+    acceptance_ref: schemas/acceptance_t2.yaml
+  - id: t3_report
+    name: 生成报告
+    depends_on: [t2_clean]
+  - id: t4_report
+    name: 提炼结论
+    depends_on: [t3_report]
+  - id: t5_notify
+    name: 发送通知
+    depends_on: [t4_report]

@@ -1,0 +1,7 @@
+jobs:
+  - id: elevator_policy_research
+    cron: "0 8 * * *"
+    timezone: Asia/Shanghai
+    template: templates/daily_plan.yaml
+    misfire_grace_time: 3600
+    concurrency: 1

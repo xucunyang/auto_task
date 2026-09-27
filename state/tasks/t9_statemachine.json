@@ -1,0 +1,27 @@
+{
+  "task_id": "t9_statemachine",
+  "plan_id": "fix_2026-09-27",
+  "status": "DONE",
+  "version": 6,
+  "owner": "orchestrator",
+  "lease_until": null,
+  "idempotency_key": "fix_2026-09-27/t9_statemachine",
+  "attempts": 0,
+  "max_attempts": 3,
+  "objective": "实现状态机流转 + 主循环 §7.2: 读状态→租约回收→算READY→派发→校验→推进",
+  "inputs": [
+    "orchestrator/orchestrator.py"
+  ],
+  "outputs": [
+    "orchestrator/orchestrator.py"
+  ],
+  "acceptance": [
+    {
+      "type": "command",
+      "cmd": "python -m py_compile orchestrator/orchestrator.py",
+      "expect_exit": 0
+    }
+  ],
+  "handoff": "13状态/11转换状态机 + §7.2 主循环",
+  "updated_at": "2026-09-27T09:34:51+08:00"
+}

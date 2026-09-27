@@ -1,0 +1,27 @@
+{
+  "task_id": "t8_shards",
+  "plan_id": "fix_2026-09-27",
+  "status": "DONE",
+  "version": 6,
+  "owner": "orchestrator",
+  "lease_until": null,
+  "idempotency_key": "fix_2026-09-27/t8_shards",
+  "attempts": 0,
+  "max_attempts": 3,
+  "objective": "按 task.md §4.2 重构 5 个任务分片: 补齐14字段",
+  "inputs": [
+    "state/tasks/"
+  ],
+  "outputs": [
+    "state/tasks/*.json"
+  ],
+  "acceptance": [
+    {
+      "type": "command",
+      "cmd": "python tests/test_shards.py",
+      "expect_exit": 0
+    }
+  ],
+  "handoff": "12 个分片全部 14 字段, 幂等键/租约/acceptance 就位",
+  "updated_at": "2026-09-27T09:34:51+08:00"
+}

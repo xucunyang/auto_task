@@ -1,0 +1,28 @@
+{
+  "task_id": "t10_concurrency",
+  "plan_id": "fix_2026-09-27",
+  "status": "DONE",
+  "version": 6,
+  "owner": "orchestrator",
+  "lease_until": null,
+  "idempotency_key": "fix_2026-09-27/t10_concurrency",
+  "attempts": 0,
+  "max_attempts": 3,
+  "objective": "实现 §11 并发控制: 原子写fsync+rename, filelock任务锁, 乐观锁version, 幂等键, 租约, 重试, 死信, 事件日志jsonl, 修复event_manager.py语法错误",
+  "inputs": [
+    "orchestrator/"
+  ],
+  "outputs": [
+    "orchestrator/utils.py",
+    "orchestrator/event/event_manager.py"
+  ],
+  "acceptance": [
+    {
+      "type": "command",
+      "cmd": "python -m py_compile orchestrator/utils.py orchestrator/event/event_manager.py",
+      "expect_exit": 0
+    }
+  ],
+  "handoff": "原子写/文件锁/幂等/租约/退避/死信 + event_manager 修复",
+  "updated_at": "2026-09-27T09:34:51+08:00"
+}

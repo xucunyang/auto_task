@@ -1,0 +1,28 @@
+{
+  "task_id": "t1_collect",
+  "plan_id": "elevator_policy_research_2026-09-27",
+  "status": "PENDING",
+  "version": 1,
+  "owner": null,
+  "lease_until": null,
+  "idempotency_key": "elevator_policy_research_2026-09-27/t1_collect",
+  "attempts": 0,
+  "max_attempts": 3,
+  "objective": "收集各省市电梯加装政策文件",
+  "inputs": [],
+  "outputs": [
+    "artifacts/collect.json"
+  ],
+  "acceptance": [
+    {
+      "type": "command",
+      "cmd": "test -f schemas/acceptance_t1.yaml",
+      "expect_exit": 0
+    },
+    {
+      "type": "file_exists",
+      "path": "artifacts/collect.json"
+    }
+  ],
+  "handoff": null
+}
