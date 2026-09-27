@@ -1,0 +1,54 @@
+# 发散影响评估: 领域扩展包 (主题无关框架)
+# match: 主题关键词命中则选用该包; market/other domains 每个领域须评估利好与利空
+# keywords: 用于从调研记录中匹配该领域的证据来源
+default_pack:
+  id: generic
+  market_domains:
+    - {name: 相关商品与服务市场, keywords: [市场, 价格, 供需]}
+    - {name: 资本与投资市场, keywords: [投资, 资金, 资本, 国债]}
+    - {name: 整体经济走势, keywords: [经济, 增长, 消费]}
+  other_domains:
+    - {name: 产业链上下游, keywords: [产业, 制造, 供应]}
+    - {name: 就业与民生, keywords: [就业, 民生, 居民]}
+    - {name: 地方财政, keywords: [财政, 补贴, 资金]}
+    - {name: 技术标准与监管, keywords: [标准, 规范, 监管, 审查]}
+
+topic_packs:
+  - id: housing_elevator
+    match: [电梯, 加装, 老旧小区, 住宅, 住房, 楼市]
+    market_domains:
+      - {name: 新房市场, keywords: [新建, 住宅项目规范, 好房子, 层高]}
+      - {name: 二手房市场, keywords: [二手房, 存量房, 流动性, 老破小]}
+      - {name: 整体楼市, keywords: [楼市, 房地产, 存量提质, 老旧小区]}
+    other_domains:
+      - {name: 电梯销售与制造, keywords: [电梯, 设备更新, 制造]}
+      - {name: 装修与建筑修缮, keywords: [装修, 修缮, 翻新, 层高]}
+      - {name: 物业运维与社区服务, keywords: [物业, 维保, 社区, 协商]}
+      - {name: 金融与保险, keywords: [公积金, 维修资金, 国债, 贷款]}
+      - {name: 适老与无障碍产业, keywords: [适老, 无障碍, 老年, 残疾]}
+
+  - id: environment_governance
+    match: [环境, 环保, 污染, 排放, 碳, 生态, 治水, 大气]
+    market_domains:
+      - {name: 环保产业市场, keywords: [环保, 治理, 污染, 修复]}
+      - {name: 高耗能品市场, keywords: [高耗能, 钢铁, 水泥, 化工]}
+      - {name: 碳交易与绿色金融, keywords: [碳, 排放权, 绿色金融]}
+    other_domains:
+      - {name: 绿色技术与设备, keywords: [技术, 设备, 监测, 处置]}
+      - {name: 高耗能行业成本, keywords: [成本, 减排, 限产, 关停]}
+      - {name: 能源结构, keywords: [能源, 煤炭, 新能源, 电力]}
+      - {name: 就业与区域经济, keywords: [就业, 区域, 县域, 转型]}
+      - {name: 出口与国际贸易, keywords: [出口, 贸易, 碳关税, 国际]}
+
+  - id: agriculture_rural
+    match: [三农, 农业, 粮食, 耕地, 乡村, 农村, 农民, 种业]
+    market_domains:
+      - {name: 粮食与农产品市场, keywords: [粮食, 收储, 价格, 农产品]}
+      - {name: 农资与种业市场, keywords: [种业, 化肥, 农药, 农机]}
+      - {name: 农村土地与置业, keywords: [土地, 宅基地, 流转]}
+    other_domains:
+      - {name: 种业与农机装备, keywords: [种业, 农机, 装备]}
+      - {name: 食品加工与养殖, keywords: [加工, 养殖, 饲料]}
+      - {name: 乡村建设与治理, keywords: [乡村, 基础设施, 治理]}
+      - {name: 农民收入与消费, keywords: [收入, 农民, 消费, 补贴]}
+      - {name: 县域财政与金融, keywords: [财政, 涉农, 信贷, 保险]}

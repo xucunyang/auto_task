@@ -1,9 +1,19 @@
-# t3_report 验收标准 (报告必须内嵌来源引用)
+# t3_report 验收标准 (主题无关: 溯源 + 发散影响评估结构)
+# 结构检查由通用规则承担; 具体领域由 config/impact_domains.yaml 领域包决定
 acceptance:
   - type: file_exists
     path: artifacts/report.md
+  - type: command
+    cmd: 'grep -qE "^# [0-9]{3} [0-9]{4}-[0-9]{2}-[0-9]{2} " artifacts/report.md'
+    expect_exit: 0
   - type: traceability
     path: artifacts/report.md
     min_links: 5
+  - type: command
+    cmd: grep -q "市场影响" artifacts/report.md && grep -q "其他领域影响" artifacts/report.md
+    expect_exit: 0
+  - type: command
+    cmd: grep -q "利好" artifacts/report.md && grep -q "利空" artifacts/report.md
+    expect_exit: 0
   - type: human_approval
     required: false

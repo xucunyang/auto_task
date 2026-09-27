@@ -1,14 +1,14 @@
 {
   "task_id": "t4_report",
-  "plan_id": "elevator_policy_research_2026-09-27",
+  "plan_id": "haojue_tvl350_research_2026-09-27",
   "status": "DONE",
-  "version": 7,
+  "version": 25,
   "owner": "sub-agent-t4_report",
-  "lease_until": "2026-09-27T10:12:02+08:00",
-  "idempotency_key": "elevator_policy_research_2026-09-27/t4_report",
+  "lease_until": "2026-09-27T11:05:37+08:00",
+  "idempotency_key": "haojue_tvl350_research_2026-09-27/t4_report",
   "attempts": 0,
   "max_attempts": 3,
-  "objective": "提炼关键结论和建议",
+  "objective": "提炼结论与建议(逐条绑定来源)",
   "inputs": [
     "artifacts/report.md"
   ],
@@ -36,5 +36,5 @@
   ],
   "handoff": null,
   "acceptance_ref": "schemas/acceptance_t4.yaml",
-  "updated_at": "2026-09-27T10:07:02+08:00"
+  "updated_at": "2026-09-27T11:00:37+08:00"
 }

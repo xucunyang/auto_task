@@ -1,0 +1,13 @@
+{
+  "status": "sent",
+  "channel": "log",
+  "sent_to": [
+    "logs/outbox"
+  ],
+  "summary": "调研完成: 2026年9月老旧小区加装电梯政策 | 发散影响评估(利好/利空)已入报告 | 结论4条 | 溯源见 artifacts/report.md",
+  "ts": "2026-09-27T10:37:23+08:00",
+  "trace": {
+    "report": "artifacts/report.md",
+    "conclusions": "artifacts/conclusions.json"
+  }
+}

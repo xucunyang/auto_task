@@ -1,10 +1,10 @@
 {
-  "plan_id": "elevator_policy_research_2026-09-27",
+  "plan_id": "haojue_tvl350_research_2026-09-27",
   "timezone": "Asia/Shanghai",
   "status": "RUNNING",
-  "version": 5,
+  "version": 8,
   "created_at": "2026-09-27T09:33:54+08:00",
-  "updated_at": "2026-09-27T10:07:02+08:00",
+  "updated_at": "2026-09-27T11:00:37+08:00",
   "tasks": [
     {
       "id": "t10_concurrency",

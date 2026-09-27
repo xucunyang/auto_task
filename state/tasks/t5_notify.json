@@ -1,14 +1,14 @@
 {
   "task_id": "t5_notify",
-  "plan_id": "elevator_policy_research_2026-09-27",
+  "plan_id": "haojue_tvl350_research_2026-09-27",
   "status": "DONE",
-  "version": 7,
+  "version": 25,
   "owner": "sub-agent-t5_notify",
-  "lease_until": "2026-09-27T10:12:02+08:00",
-  "idempotency_key": "elevator_policy_research_2026-09-27/t5_notify",
+  "lease_until": "2026-09-27T11:05:37+08:00",
+  "idempotency_key": "haojue_tvl350_research_2026-09-27/t5_notify",
   "attempts": 0,
   "max_attempts": 3,
-  "objective": "推送结论到通知渠道",
+  "objective": "发送调研完成通知",
   "inputs": [
     "artifacts/conclusions.json"
   ],
@@ -32,5 +32,5 @@
   ],
   "handoff": null,
   "acceptance_ref": "schemas/acceptance_t5.yaml",
-  "updated_at": "2026-09-27T10:07:02+08:00"
+  "updated_at": "2026-09-27T11:00:37+08:00"
 }

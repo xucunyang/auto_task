@@ -1,63 +1,59 @@
 {
-  "topic": "2026年9月老旧小区加装电梯政策",
-  "analyzed_items": 8,
+  "topic": "豪爵旅行者TVL350上市至今销量及相关影响",
+  "analyzed_items": 9,
+  "impact_pack": "generic",
   "conclusions": [
     {
-      "text": "9-18国新办发布会为本月最重磅信号：《住宅项目规范》将电梯配置门槛降至4层，新建走向强制",
+      "text": "[市场·利好] 相关商品与服务市场: 豪爵旅行者TVL350上市至今销量及相关影响推进释放结构性机会, 相关商品与服务市场景气度有望受益",
       "sources": [
-        "https://finance.sina.com.cn/jjxw/2026-09-18/doc-inisfyex3463239.shtml",
-        "https://www.cncaprc.gov.cn/xwllxw/773057.jhtml",
-        "https://www.bjnews.com.cn/detail/1789718135129989.html"
+        "https://kiwavmotors.com/en/blog/motorcycle-market-2026-whats-really-happening",
+        "https://news.qq.com/rain/a/20260821A08LL200",
+        "https://www.58moto.com/article/3676/12489658.html"
       ]
     },
     {
-      "text": "既有加装资金机制定型：国债25/30万定额+地方叠加+公积金/维修资金+自筹，且不可与地方常规补助叠加",
+      "text": "[市场·利空] 相关商品与服务市场: 利空: 标准抬升与成本传导或抑制相关商品与服务市场的部分需求",
       "sources": [
-        "https://news.qq.com/rain/a/20260907A05W1Z00",
-        "https://www.sohu.com/a/1075395542_121123837"
+        "https://kiwavmotors.com/en/blog/motorcycle-market-2026-whats-really-happening",
+        "https://news.qq.com/rain/a/20260821A08LL200",
+        "https://www.58moto.com/article/3676/12489658.html"
       ]
     },
     {
-      "text": "地方执行进入公示落地期：武汉硚口9-20联合审查公示、清溪9-13申报宣传，审批申报通道常态化",
+      "text": "[其他·利好] 产业链上下游: 利好: 豪爵旅行者TVL350上市至今销量及相关影响带动产业链上下游的需求释放与业务增量（分析推断）",
       "sources": [
-        "https://www.qiaokou.gov.cn/qkxw/tzgg/202609/t20260921_2851716.shtml",
-        "https://www.sohu.com/a/1075395542_121123837"
+        "https://news.qq.com/rain/a/20260509A072EJ00",
+        "https://www.163.com/dy/article/L1QIKVLJ0541B741.html"
       ]
     },
     {
-      "text": "治理机制（278条表决+低层补偿+并联审批）在9月被反复重申，制度供给基本完备",
+      "text": "[其他·利空] 产业链上下游: 利空: 同时产业链上下游也面临合规成本上升与竞争加剧压力（分析推断）",
       "sources": [
-        "http://politics.people.com.cn/n1/2026/0924/c461001-40804660.html",
-        "https://news.qq.com/rain/a/20260907A05W1Z00"
+        "https://news.qq.com/rain/a/20260509A072EJ00",
+        "https://www.163.com/dy/article/L1QIKVLJ0541B741.html"
       ]
     }
   ],
   "suggestions": [
     {
-      "text": "有加装意愿的楼栋应在2026年内完成施工许可备案以符合国债“先建后补”申报条件",
+      "text": "针对资本与投资市场（利好）建议跟踪: 豪爵旅行者TVL350上市至今销量及相关影响推进释放结构性机会, 资本与投资市场景气度有望受益（分析推断）",
       "sources": [
-        "https://news.qq.com/rain/a/20260907A05W1Z00",
-        "https://www.sohu.com/a/1075395542_121123837"
+        "https://news.qq.com/rain/a/20260509A072EJ00",
+        "https://www.163.com/dy/article/L1QIKVLJ0541B741.html"
       ]
     },
     {
-      "text": "地方住建部门尽快公布国补与地方补助叠加口径，避免居民误判补贴额度",
+      "text": "针对资本与投资市场（利空）建议跟踪: 利空: 标准抬升与成本传导或抑制资本与投资市场的部分需求（分析推断）",
       "sources": [
-        "https://www.sohu.com/a/1075395542_121123837"
+        "https://news.qq.com/rain/a/20260509A072EJ00",
+        "https://www.163.com/dy/article/L1QIKVLJ0541B741.html"
       ]
     },
     {
-      "text": "建立“新建强制4层设梯-既有补装”衔接清单，统一标准口径",
+      "text": "针对整体经济走势（利好）建议跟踪: 豪爵旅行者TVL350上市至今销量及相关影响推进释放结构性机会, 整体经济走势景气度有望受益（分析推断）",
       "sources": [
-        "https://finance.sina.com.cn/jjxw/2026-09-18/doc-inisfyex3463239.shtml",
-        "https://www.bjnews.com.cn/detail/1789718135129989.html"
-      ]
-    },
-    {
-      "text": "低层补偿协商前置化，推广联合审查+基层协商组合机制",
-      "sources": [
-        "https://www.qiaokou.gov.cn/qkxw/tzgg/202609/t20260921_2851716.shtml",
-        "http://politics.people.com.cn/n1/2026/0924/c461001-40804660.html"
+        "https://news.qq.com/rain/a/20260509A072EJ00",
+        "https://www.163.com/dy/article/L1QIKVLJ0541B741.html"
       ]
     }
   ]

@@ -72,3 +72,64 @@
 {"ts": "2026-09-27T10:07:02+08:00", "task_id": "t4_report", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
 {"ts": "2026-09-27T10:07:02+08:00", "task_id": "t5_notify", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
 {"ts": "2026-09-27T10:07:02+08:00", "task_id": "t5_notify", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t3_report", "from": "DONE", "to": "PENDING", "agent": "orchestrator", "note": "rerun: 报告升级-影响分析"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t4_report", "from": "DONE", "to": "BLOCKED", "agent": "orchestrator", "note": "rerun: 报告升级-影响分析"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t5_notify", "from": "DONE", "to": "BLOCKED", "agent": "orchestrator", "note": "rerun: 报告升级-影响分析"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t3_report", "from": "PENDING", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t4_report", "from": "BLOCKED", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t5_notify", "from": "BLOCKED", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t3_report", "from": "RUNNING_PLACEHOLDER", "to": "RUNNING", "agent": "sub-agent-t3_report"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t3_report", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t4_report", "from": "RUNNING_PLACEHOLDER", "to": "RUNNING", "agent": "sub-agent-t4_report"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t4_report", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t5_notify", "from": "RUNNING_PLACEHOLDER", "to": "RUNNING", "agent": "sub-agent-t5_notify"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t5_notify", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t3_report", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t3_report", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t4_report", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t4_report", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t5_notify", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:28:33+08:00", "task_id": "t5_notify", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t3_report", "from": "DONE", "to": "PENDING", "agent": "orchestrator", "note": "rerun: 发散影响评估模块接入"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t4_report", "from": "DONE", "to": "BLOCKED", "agent": "orchestrator", "note": "rerun: 发散影响评估模块接入"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t5_notify", "from": "DONE", "to": "BLOCKED", "agent": "orchestrator", "note": "rerun: 发散影响评估模块接入"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t3_report", "from": "PENDING", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t4_report", "from": "BLOCKED", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t5_notify", "from": "BLOCKED", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t3_report", "from": "RUNNING_PLACEHOLDER", "to": "RUNNING", "agent": "sub-agent-t3_report"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t3_report", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t4_report", "from": "RUNNING_PLACEHOLDER", "to": "RUNNING", "agent": "sub-agent-t4_report"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t4_report", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t5_notify", "from": "RUNNING_PLACEHOLDER", "to": "RUNNING", "agent": "sub-agent-t5_notify"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t5_notify", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t3_report", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t3_report", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t4_report", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t4_report", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t5_notify", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T10:37:23+08:00", "task_id": "t5_notify", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t1_collect", "from": "PENDING", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t2_clean", "from": "BLOCKED", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t3_report", "from": "BLOCKED", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t4_report", "from": "BLOCKED", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t5_notify", "from": "BLOCKED", "to": "READY", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t1_collect", "from": "RUNNING_PLACEHOLDER", "to": "RUNNING", "agent": "sub-agent-t1_collect"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t1_collect", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t2_clean", "from": "RUNNING_PLACEHOLDER", "to": "RUNNING", "agent": "sub-agent-t2_clean"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t2_clean", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t3_report", "from": "RUNNING_PLACEHOLDER", "to": "RUNNING", "agent": "sub-agent-t3_report"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t3_report", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t4_report", "from": "RUNNING_PLACEHOLDER", "to": "RUNNING", "agent": "sub-agent-t4_report"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t4_report", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t5_notify", "from": "RUNNING_PLACEHOLDER", "to": "RUNNING", "agent": "sub-agent-t5_notify"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t5_notify", "from": "RUNNING", "to": "SUBMITTED", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t1_collect", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t1_collect", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t2_clean", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t2_clean", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t3_report", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t3_report", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t4_report", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t4_report", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t5_notify", "from": "SUBMITTED", "to": "VERIFYING", "agent": "orchestrator"}
+{"ts": "2026-09-27T11:00:37+08:00", "task_id": "t5_notify", "from": "VERIFYING", "to": "DONE", "agent": "orchestrator"}
